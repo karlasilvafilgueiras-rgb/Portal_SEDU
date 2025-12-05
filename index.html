@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Escolar - Início</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ======== CABEÇALHO ======== -->
+  <header class="topbar">
+    <div class="header-content">
+      <img src="img/Sedu-logo-atualizado.png" alt="Logo SEDU" class="header-logo">
+      <h1>Escola Exemplo</h1>
+    </div>
+    <nav>
+      <a href="social.html">Rede Social Escolar</a>
+      <a href="professor.html">Professor</a>
+      <a href="alunos.html">Aluno</a>
+      <a href="responsavel.html">Responsável</a>
+      <a href="gestor.html">Gestor</a>
+    </nav>
+  </header>
+
+  <!-- ======== INTRODUÇÃO ======== -->
+  <main class="intro">
+    <h2>Bem-vindo ao Portal Escolar</h2>
+    <p>Acompanhe a comunicação entre escola, alunos, professores e famílias.</p>
+  </main>
+
+  <!-- ======== SEÇÃO DE ILUSTRAÇÃO (IMAGEM SEPARADA) ======== -->
+  <section class="illustration-section">
+    <div class="illustration-container">
+      <img src="img/menino-ilustracao.png" alt="Menino sorridente sentado em um banco lendo um livro em um ambiente escolar com árvores ao fundo, transmitindo uma sensação de tranquilidade e aprendizado" class="illustration-img">
+    </div>
+  </section>
+
+
+  <!-- ======== SEÇÃO DO CALENDÁRIO AJUSTADA ======== -->
+  <section class="calendar-section">
+    <div class="calendar-columns">
+
+      <!-- Coluna 1: Caixa com o calendário -->
+      <div class="calendar-col-1">
+        <h2 class="calendar-title">Calendário Escolar</h2>
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prev-month" class="nav-btn">❮</button>
+            <h3 id="month-year"></h3>
+            <button id="next-month" class="nav-btn">❯</button>
+          </div>
+
+          <div class="weekdays">
+            <div class="weekday">Dom</div>
+            <div class="weekday">Seg</div>
+            <div class="weekday">Ter</div>
+            <div class="weekday">Qua</div>
+            <div class="weekday">Qui</div>
+            <div class="weekday">Sex</div>
+            <div class="weekday">Sab</div>
+          </div>
+
+          <div id="calendar-days" class="calendar-days"></div>
+        </div>
+      </div>
+      <!-- Coluna 3: Quadro com eventos do dia selecionado -->
+      <div class="calendar-col-3 events-panel">
+        <h2 class="events-title">Eventos do Dia</h2>
+        <p id="selected-date" class="selected-date">Selecione um dia no calendário</p>
+        <ul id="event-items" class="event-items">
+          <li>Sem eventos selecionados.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEÇÃO DE AVISOS ======== -->
+  <section class="announcements-section">
+    <div class="announcements-columns">
+      <div class="announcements-col-1">
+        <h2 class="announcements-title">📢 Avisos para Todos</h2>
+        <div class="announcements-container">
+          <div class="announcement-item">
+            <h3>Novo Aviso</h3>
+            <p class="announcement-date">
+              Adicione aqui os avisos importantes para todos os usuários do portal.
+            </p>
+          </div>
+          <div class="announcement-item">
+            <h3>Comunicados Importantes</h3>
+            <p class="announcement-date">
+              Mantenha a comunidade escolar sempre informada sobre eventos, datas e mudanças.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== RODAPÉ ======== -->
+  <footer>
+    © 2025 Escola Exemplo - Todos os direitos reservados.
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
